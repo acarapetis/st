@@ -112,8 +112,6 @@ void *xmalloc(size_t);
 void *xrealloc(void *, size_t);
 char *xstrdup(const char *);
 
-int xgetcolor(int x, unsigned char *r, unsigned char *g, unsigned char *b);
-
 int isboxdraw(Rune);
 ushort boxdrawindex(const Glyph *);
 #ifdef XFT_VERSION
@@ -121,7 +119,6 @@ ushort boxdrawindex(const Glyph *);
 void boxdraw_xinit(Display *, Colormap, XftDraw *, Visual *);
 void drawboxes(int, int, int, int, XftColor *, XftColor *, const XftGlyphFontSpec *, int);
 #endif
-
 /* config.h globals */
 extern char *utmp;
 extern char *scroll;
